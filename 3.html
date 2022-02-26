@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 40px;
+        }
+
+        .regform {
+            width: 800px;
+            background-color: rgba(0, 0, 0, 0.65);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .main {
+            background-color: rgb(0, 0, 0, 0.5);
+            width: 800px;
+            margin: auto;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        #name {
+            width: 100%;
+            height: 100px;
+        }
+
+        .name {
+            margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .firstname {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .lastname {
+            position: relative;
+            left: 417px;
+            top: -80px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .firstlabel {
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 203px;
+            top: -45px;
+        }
+
+        .lastlabel {
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 173px;
+            top: -45px;
+        }
+
+        .Streamid {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .Studentid {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .SeatNo {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CreditsSem1 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CGSem1 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .GPASem1 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CreditsSem2 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CGSem2 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .GPAsem2 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CreditsSem3 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CGSem3 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .GPASem3 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CreditsSem4 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CGSem4 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .GPASem4 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CreditsSem5 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CGSem5 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .GPASem5 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CreditsSem6 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .CGSem6 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .GPASem6 {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .Status {
+            position: relative;
+            left: 226px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .submit {
+            position: relative;
+            left: 300px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="regform">
+        <h1>CGPA Form</h1>
+    </div>
+    <div class="main">
+        <form action="text">
+
+            <h2 class="name">Select College</h2>
+            <select name="Select College" class="option">
+                <option disabled="disabled" selected="selected">---Select College---</option>
+                <option>Same College</option>
+                <option>Another College</option>
+
+            </select>
+            <div id="name" class="name">
+                <h2>Name</h2>
+                <input type="text" class="firstname" name="first_name"><br>
+                <label class="firstlabel">first name</label>
+                <input type="text" class="lastname" name="last_name">
+                <label class="lastlabel">last name</label>
+            </div><br><br>
+            <h2 class="name">Stream id</h2>
+            <input type="text" class="Streamid" name="stram id">
+
+            <h2 class="name">Student id</h2>
+            <input type="text" class="Studentid" name="Student id">
+
+            <h2 class="name">Seat No.</h2>
+            <input type="text" class="SeatNo" name="Seat No."><br><br><br><br><br>
+
+            <h2 class="name">Credits Sem 1</h2>
+            <input type="text" class="CreditsSem1" name="Credits Sem 1">
+
+            <h2 class="name">CG Sem 1</h2>
+            <input type="text" class="CGSem1" name="CG Sem 1">
+
+            <h2 class="name">GPA Sem 1</h2>
+            <input type="text" class="GPASem1" name="GPA Sem 1"><br><br><br><br><br>
+
+            <h2 class="name">Credits Sem 2</h2>
+            <input type="text" class="CreditsSem2" name="Credits Sem 2">
+
+            <h2 class="name">CG Sem 2</h2>
+            <input type="text" class="CGSem2" name="CG Sem 2">
+
+            <h2 class="name">GPA sem 2</h2>
+            <input type="text" class="GPAsem2" name="GPA sem 2"><br><br><br><br><br>
+
+            <h2 class="name">Credits Sem 3</h2>
+            <input type="text" class="CreditsSem3" name="Credits Sem 3">
+
+            <h2 class="name">CG Sem 3</h2>
+            <input type="text" class="CGSem3" name="CG Sem 3">
+
+            <h2 class="name">GPA Sem 3</h2>
+            <input type="text" class="GPASem3" name="GPA Sem 3"><br><br><br><br><br>
+
+            <h2 class="name">Credits Sem 4</h2>
+            <input type="text" class="CreditsSem4" name="Credits Sem 4">
+
+            <h2 class="name">CG Sem 4</h2>
+            <input type="text" class="CGSem4" name="CG Sem 4">
+
+            <h2 class="name">GPA Sem 4</h2>
+            <input type="text" class="GPASem4" name="GPA Sem 4"><br><br><br><br><br>
+
+            <h2 class="name">Credits Sem 5</h2>
+            <input type="text" class="CreditsSem5" name="Credits Sem 5">
+
+            <h2 class="name">CG Sem 5</h2>
+            <input type="text" class="CGSem5" name="CG Sem 5">
+
+            <h2 class="name">GPA Sem 5</h2>
+            <input type="text" class="GPASem5" name="GPA Sem 5"><br><br><br><br><br>
+
+            <h2 class="name">Credits Sem 6</h2>
+            <input type="text" class="CreditsSem6" name="Credits Sem 6">
+
+            <h2 class="name">CG Sem 6</h2>
+            <input type="text" class="CGSem6" name="CG Sem 6">
+
+            <h2 class="name">GPA Sem 6</h2>
+            <input type="text" class="GPASem6" name="GPA Sem 6"><br><br><br>
+
+            <h2 class="name">Status</h2>
+            <input type="text" class="Status" name="Status"><br><br><br><br><br>
+
+            <input type="submit" class="submit" name="submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
