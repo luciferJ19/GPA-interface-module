@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        .hidden{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+
+</head>
+<body>
+<div class="container">
+<form id="contForm" action="" method=""> 
+  <fieldset>
+    <label for="Choose College">Choose College</label>
+    <select name="selection" id="selection" class="selection">
+        <option value="nope" selected >--Select--</option>
+        <option value="same">Same College</option>
+        <option value="other">Other College</option>
+    </select>
+  </fieldset>
+  <div class="hidden" id="pDetails">
+  <fieldset id="SameCollege">
+    <label for="name">Name</label> <input type="text" id="name" name="name"><br><br>
+    <label for="streamid">Stream ID</label> <input type="text" id="streamid" name="streamid"><br><br>
+    <label for="studentid">Student ID</label> <input type="text" id="studentid" name="studentid"><br><br>
+    <label for="seatnumber">Seat Number</label> <input type="text" id="seatnumber" name="seatnumber"><br><br>
+    <hr>
+    <label for="creditsem1">Credit Semister 1</label> <input type="text" id="creditsem1" name="creditsem1"><br><br>
+    <label for="cgsem1">CG semister 1</label> <input type="text" id="cgsem1" name="cgsem1"><br><br>
+    <label for="gpasem1">GPA semister 1</label> <input type="text" id="gpasem1" name="gpasem1"><br><br>
+    <hr>
+    <label for="creditsem2">Credit Semister 2</label> <input type="text" id="creditsem2" name="creditsem2"><br><br>
+    <label for="cgsem2">CG semister 2</label> <input type="text" id="cgsem2" name="cgsem2"><br><br>
+    <label for="gpasem2">GPA semister 2</label> <input type="text" id="gpasem2" name="gpasem2"><br><br>
+    <hr>
+    <label for="creditsem3">Credit Semister 3</label> <input type="text" id="creditsem3" name="creditsem3"><br><br>
+    <label for="cgsem3">CG semister 3</label> <input type="text" id="cgsem3" name="cgsem3"><br><br>
+    <label for="gpasem3">GPA semister 3</label> <input type="text" id="gpasem3" name="gpasem3"><br><br>
+    <hr>
+    <label for="creditsem4">Credit Semister 4</label> <input type="text" id="creditsem4" name="creditsem4"><br><br>
+    <label for="cgsem4">CG semister 4</label> <input type="text" id="cgsem4" name="cgsem4"><br><br>
+    <label for="gpasem4">GPA semister 4</label> <input type="text" id="gpasem4" name="gpasem4"><br><br>
+    <hr>
+    <label for="creditsem5">Credit Semister 5</label> <input type="text" id="creditsem5" name="creditsem5"><br><br>
+    <label for="cgsem5">CG semister 5</label> <input type="text" id="cgsem5" name="cgsem5"><br><br>
+    <label for="gpasem5">GPA semister 5</label> <input type="text" id="gpasem5" name="gpasem5"><br><br>
+    <hr>
+    <label for="creditsem6">Credit Semister 6</label> <input type="text" id="creditsem6" name="creditsem6"><br><br>
+    <label for="cgsem6">CG semister 6</label> <input type="text" id="cgsem6" name="cgsem6"><br><br>
+    <label for="gpasem6">GPA semister 6</label> <input type="text" id="gpasem6" name="gpasem6"><br><br>
+  </fieldset>
+  </div>
+  <fieldset>
+      <button name="submit" type="submit" id="contact-submit">Submit</button>
+  </fieldset> 
+</form>
+</div>
+
+<script>
+    $('.selection').change(function(){
+        var responseID = $(this).val();
+        if(responseID =="nope"){
+            $('#pDetails').removeClass("shown");
+            $('#pDetails').addClass("hidden");
+        }
+       
+        else{
+            $('#pDetails').removeClass("hidden");
+            $('#pDetails').addClass("shown");
+        }
+        console.log(responseID);
+    });
+</script>
+
+</body>
+</html>
